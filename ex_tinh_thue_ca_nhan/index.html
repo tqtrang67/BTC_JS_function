@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Tính thuế thu nhập cá nhân trong 1 năm</h1>
+		<h4>
+			Công thức tính thuế :
+			<br />
+			(1)Thuế thu nhập cá nhân cần nộp = Thu nhập tính thuế x Thuế suất.
+			<br />
+			(2)Thu nhập tính thuế = Thu nhập phải chịu thuế - các khoản giảm
+			trừ. <br />
+		</h4>
+		<form class="contact100-form">
+			<div
+				class="wrap-input100 validate-input"
+				data-validate="Name is required"
+			>
+				<h2>Nhập tổng thu nhập cá nhân</h2>
+				<input
+					class="input100"
+					type="text"
+					name="name"
+					id="thu_nhap"
+					placeholder="Tổng thu nhập cá nhân"
+				/>
+			</div>
+			<div
+				class="wrap-input100 validate-input"
+				data-validate="Name is required"
+			>
+				<h2>Nhập số người phụ thuộc (các khoản miễn trừ)</h2>
+				<input
+					class="input100"
+					type="text"
+					name="name"
+					id="so_nguoi"
+					placeholder="Số người phụ thuộc "
+				/>
+			</div>
+			<br />
+			<div class="wrap-contact100-form-btn">
+				<div class="contact100-form-bgbtn"></div>
+				<button
+					id="btn_tinh_tien"
+					type="button"
+					class="contact100-form-btn"
+				>
+					TÍNH TIỀN
+				</button>
+			</div>
+		</form>
+		<div id="ket_qua"></div>
+
+		<script src="./index.js"></script>
+	</body>
+</html>

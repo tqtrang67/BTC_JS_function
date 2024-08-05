@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Quản lý tuyển sinh</h1>
+		<form class="contact100-form">
+			<div
+				class="wrap-input100 validate-input"
+				data-validate="Name is required"
+			>
+				<h2>Nhập điểm chuẩn của hội đồng</h2>
+				<input
+					class="input100"
+					type="text"
+					name="name"
+					id="diem_chuan"
+					placeholder="Điểm chuẩn "
+				/>
+			</div>
+			<div
+				class="wrap-input100 validate-input"
+				data-validate="Name is required"
+			>
+				<h2>Nhập điểm ưu tiên theo khu vực và đối tượng</h2>
+				<label for="khu_vuc" class="form-label">Khu vực:</label>
+				<select id="khu_vuc" class="form-select">
+					<option value="2">A</option>
+					<option value="1">B</option>
+					<option value="0.5">C</option>
+				</select>
+				<br />
+				<br />
+				<label for="doi_tuong" class="form-label">Đối tượng:</label>
+				<select id="doi_tuong" class="form-select">
+					<option value="2.5">1</option>
+					<option value="1.5">2</option>
+					<option value="1">3</option>
+				</select>
+			</div>
+
+			<div
+				class="wrap-input100 validate-input"
+				data-validate="Name is required"
+			>
+				<h2>Nhập điểm 3 môn</h2>
+				<input
+					class="input100"
+					type="text"
+					name="name"
+					id="diem_toan"
+					placeholder="Nhập điểm môn toán"
+				/>
+				<input
+					class="input100"
+					type="text"
+					name="name"
+					id="diem_van"
+					placeholder="Nhập điểm môn văn"
+				/>
+				<input
+					class="input100"
+					type="text"
+					name="name"
+					id="diem_anh"
+					placeholder="Nhập điểm môn anh"
+				/>
+			</div>
+			<br />
+			<div class="wrap-contact100-form-btn">
+				<div class="contact100-form-bgbtn"></div>
+				<button
+					id="btn_ket_qua"
+					type="button"
+					class="contact100-form-btn"
+				>
+					Kết quả
+				</button>
+			</div>
+		</form>
+
+		<div id="ket_qua"></div>
+
+		<script src="./index.js"></script>
+	</body>
+</html>
